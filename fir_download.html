@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div class="background">
+        <img src="images/background.png" alt="">
+    </div>
+
+    <div class="item-bg"></div>
+
+    <div class="news-slider">
+        <div class="news-slider__wrp swiper-wrapper">
+
+            <div class="news-slider__item swiper-slide">
+                <div class="news__item">
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/qiniu.png" style="margin-top: 30px"
+                             alt="news">
+                        <h1>3333</h1>
+                    </a>
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/qiniu.png" alt="news">
+                        <h1>4444</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+                <div class="news__item">
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/qnjl.png" style="margin-top: 30px"
+                             alt="news">
+                        <h1>2222</h1>
+                    </a>
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/qnjl.png" alt="news">
+                        <h1>1111</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+                <div class="news__item">
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/jiangzhen.png" style="margin-top: 30px"
+                             alt="news">
+                        <h1>2222</h1>
+                    </a>
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/jiangzhen.png" alt="news">
+                        <h1>4444</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+                <div class="news__item">
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/bcjl.png" style="margin-top: 30px"
+                             alt="news">
+                        <h1>322332432</h1>
+                    </a>
+                    <a href="/" class="appName">
+                        <img class="news__img" src="images/jiangzhenzs.png" alt="news">
+                        <h1>123123111</h1>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="news-slider__ctr">
+
+            <div class="news-slider__arrows">
+                <!--                    <button class="news-slider__arrow news-slider-prev">-->
+                <!--                      <span class="icon-font">-->
+                <!--                        <svg class="icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>-->
+                <!--                      </span>-->
+                <!--                    </button>-->
+                <!--                    <button class="news-slider__arrow news-slider-next">-->
+                <!--                      <span class="icon-font">-->
+                <!--                        <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>-->
+                <!--                      </span>-->
+                <!--                    </button>-->
+            </div>
+
+            <div class="news-slider__pagination"></div>
+
+
+        </div>
+        <h2 class="tips">
+            说明：<br/>
+
+            1、fir页面下拉底部有历史版本<br/>
+
+            2、版本号规范：2.4.0（20400-XX）XX为打包次数<br/>
+
+            <br/>
+
+            Android包说明：<br/>
+
+            1、app内悬浮球提供了常用测试功能<br/>（切换环境、用户、推送token、测试标准弹窗、清除数据、查看当前账号\设备信息等）<br/>
+
+            2、测试包build号增加了第三位，即20400-XX-YYY，YYY代表当前版本代码提交次数，用于频繁发包时细分版本<br/>
+
+            3、测试包内集成了fir版本更新功能，app启动时会提示有新的测试包，或者从设置中手动更新<br/>
+
+        </h2>
+
+    </div>
+
+</div>
+
+<svg hidden="hidden" id="icon">
+    <defs>
+        <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+            <title>arrow-left</title>
+            <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+            <title>arrow-right</title>
+            <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
+        </symbol>
+    </defs>
+</svg>
+
+<script src="js/slide.js"></script>
+
+</body>
+</html>
